@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<div class="container bg-warning rounded">
+  <div class="row">
+    <div class=" col text-start">
+      <img src="https://www.nationhive.com/sites/www.nationhive.com/files/pokemon-go/pokemon-001-bulbizarre.png" class="w-50" alt="">
+    </div>
+    <div class=" col text-center">
+      <form action="" [formGroup]="form" (ngSubmit)="connexion()">
+        <input type="number"class="form-control" formControlName="id" hidden>
+
+        <input type="text" placeholder="enter username" class="rounded" formControlName="pseudo" >
+        <div class="text-center"><button type="submit" class="btn btn-danger"> LOGIN</button></div>
+      </form>
+    </div>
+    <div class=" col text-end">
+      <img src="https://static.wikia.nocookie.net/pm-universe/images/7/77/Pikachu.png"   alt="">
+    </div>
+  </div>
+</div>
